@@ -1,0 +1,44 @@
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 6rem;
+}
+
+/* HTML: <div class="spinner"></div> */
+.spinner {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    animation: l14 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    border: 8px solid;
+    border-radius: 50%;
+    border-color: var(--button-red) var(--button-red) transparent transparent;
+    mix-blend-mode: darken;
+    animation: l14 1s infinite linear;
+}
+
+.spinner::after {
+    border-color: transparent transparent var(--button-blue) var(--button-blue);
+    animation-direction: reverse;
+}
+
+@keyframes l14 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+/* Media Query for 550px */
+@media (max-width: 550px) {
+    .spinnerContainer {
+        min-height: 3rem;
+    }
+}

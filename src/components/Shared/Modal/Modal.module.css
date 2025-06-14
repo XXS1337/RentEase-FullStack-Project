@@ -1,0 +1,112 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    /* Ensure it appears above all other content */
+}
+
+.modalContent {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.modalButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    color: var(--button-text);
+}
+
+.modalButtonYes {
+    background-color: var(--button-red);
+
+}
+
+.modalButtonNo {
+    background-color: var(--button-blue);
+
+}
+
+.modalButtonNo:hover {
+    background-color: var(--button-blue-hover);
+}
+
+.modalButtonYes:hover {
+    background-color: var(--button-red-hover);
+}
+
+.modalButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for 850px */
+@media (max-width: 850px) {
+    .modalContent {
+        width: 80%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .modalButton {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+/* Media Query for 550px */
+@media (max-width: 550px) {
+    .modalContent {
+        width: 90%;
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .modalButtons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .modalButton {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .modalButtonNo,
+    .modalButtonYes {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        width: 10rem;
+        margin-bottom: 0.5rem;
+    }
+}

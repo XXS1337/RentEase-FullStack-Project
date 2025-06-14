@@ -1,0 +1,24 @@
+.contentArea {
+    flex: 1;
+    min-height: 75vh;
+    padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .contentArea {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 850px) {
+    .contentArea {
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .contentArea {
+        padding: 0;
+    }
+
+}

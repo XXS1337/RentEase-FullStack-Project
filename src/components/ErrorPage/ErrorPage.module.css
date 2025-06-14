@@ -1,0 +1,76 @@
+.errorPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 35rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--page-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center
+}
+
+.errorPage h1 {
+    font-size: 2rem;
+    color: var(--button-red);
+}
+
+.errorPage p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.goBackButton {
+    background-color: var(--button-red);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.goBackButton:hover {
+    background-color: var(--button-red-hover);
+}
+
+@media (max-width: 850px) {
+    .errorPage {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .errorPage h1 {
+        font-size: 1.75rem;
+    }
+
+    .errorPage p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .errorPage {
+        padding: 0.5rem;
+    }
+
+    .errorContent h1 {
+        font-size: 1.5rem;
+    }
+
+    .errorContent p {
+        font-size: 0.85rem;
+    }
+
+    .goBackButton {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}

@@ -1,0 +1,222 @@
+.profile {
+    max-width: 35rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--page-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.profileDetails {
+    margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.profileDetails h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.profileDetails p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.formTitle {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+label {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 10rem;
+}
+
+input {
+    flex: 2;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--text-primary);
+    outline: none;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+.duplicateEmail {
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.updateButton {
+    padding: 0.75rem;
+    background-color: var(--button-blue);
+    color: var(--button-text);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.backButton {
+    padding: 0.75rem;
+    background-color: var(--button-blue);
+    margin-top: 1rem;
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.updateButton:hover,
+.backButton:hover {
+    background-color: var(--button-blue-hover);
+}
+
+.updateButton:disabled {
+    background-color: var(--button-disabled);
+    cursor: not-allowed;
+}
+
+.updateButton:disabled:hover {
+    background-color: var(--button-disabled-hover);
+}
+
+.deleteButton {
+    padding: 0.75rem;
+    background-color: var(--button-red);
+    margin-top: 1rem;
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.deleteButton:hover {
+    background-color: var(--button-red-hover);
+}
+
+@media (max-width: 850px) {
+
+    .profile {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .profile {
+        padding: 0.5rem;
+    }
+
+    .profile h2 {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .profileDetails {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .profileDetails h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .profileDetails p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
+
+    .profileDetails p strong {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .formTitle {
+        font-size: 1rem;
+    }
+
+    .profile form {
+        gap: 0.5rem;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputContainer label {
+        width: 100%;
+    }
+
+    .inputContainer input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .updateButton,
+    .deleteButton,
+    .backButton {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+
+}

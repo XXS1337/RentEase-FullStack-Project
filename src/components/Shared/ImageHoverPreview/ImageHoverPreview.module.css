@@ -1,0 +1,29 @@
+.hoverPreview {
+    position: fixed;
+    max-width: 500px;
+    max-height: 500px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #000;
+    padding: 0.25rem;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: scale(0.98);
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+.hoverPreview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,114 @@
+:root {
+    /* Navbar */
+    --navbar-bg: #4A90E2;
+    --navbar-text: #FFFFFF;
+    --navbar-hover: #2ECC71;
+    --navbar-active: #FF6F61;
+    --icon-moon: #C0C0C0;
+
+    /* Home */
+    --page-bg: #F9F9F9;
+    --card-bg: #FFFFFF;
+    --border-color: #DDDDDD;
+    --text-primary: #4A90E2;
+    --text-secondary: #555555;
+    --button-blue: #4A90E2;
+    --button-blue-hover: #357AB8;
+    --button-red: #FF6F61;
+    --button-red-hover: #E64B40;
+    --button-disabled: #AAAAAA;
+    --button-disabled-hover: #888888;
+    --button-text: #FFFFFF;
+    --error-bg: rgba(255, 0, 0, 0.05);
+
+    /* All Users */
+    --focus-blue: #007BFF;
+    --table-header-bg: #F4F4F4;
+    --table-row-hover-bg: #F1F1F1;
+    --button-delete: #DC3545;
+    --button-delete-hover: #B02A37;
+
+    /* ChatBot */
+    --user-msg-bg: #DCF8C6;
+    --bot-msg-bg: #ECECEC;
+    --link-color: #0077cc;
+
+    /* Shared Semantic Colors */
+    --error-color: #FF0000;
+    --heart-filled: #FF0000;
+    --heart-empty: #AAAAAA;
+    --delete-color: #FF0000;
+    --edit-color: #F39C12;
+    --edit-color-hover: #D87A00;
+    --message-highlight: #FF5722;
+    --button-green: #4CAF50;
+    --button-green-hover: #45A049;
+}
+
+body.dark {
+    /* NavBar*/
+    --navbar-bg: #1E2A38;
+    --navbar-text: #90CAF9;
+    --navbar-hover: #00C389;
+    --navbar-active: #F27878;
+    --icon-sun: #FFD700;
+
+    /* Home */
+    --page-bg: #1A1A1A;
+    --card-bg: #2A2A2A;
+    --border-color: #444444;
+    --text-primary: #90CAF9;
+    --text-secondary: #BBBBBB;
+    --button-blue: #1976D2;
+    --button-blue-hover: #1565C0;
+    --button-red: #E57373;
+    --button-red-hover: #D32F2F;
+    --button-disabled: #777777;
+    --button-disabled-hover: #555555;
+    --error-bg: rgba(255, 0, 0, 0.15);
+
+    /* All Users */
+    --focus-blue: #90CAF9;
+    --table-header-bg: #2A2A2A;
+    --table-row-hover-bg: #1E1E1E;
+    --button-delete: #E57373;
+    --button-delete-hover: #D32F2F;
+
+    /* ChatBot */
+    --user-msg-bg: #2E7D32;
+    --bot-msg-bg: #424242;
+    --link-color: #66b2ff;
+
+    /* Shared Semantic Colors */
+    --error-color: #FF8A80;
+    --heart-filled: #FF8A80;
+    --heart-empty: #888888;
+    --edit-color: #FFB74D;
+    --edit-color-hover: #FF9800;
+    --message-highlight: #FF8A65;
+    --button-green: #4CAF50;
+    --button-green-hover: #45A049;
+}
+
+/* Light mode defaults */
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode override */
+body.dark {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* Optional global element adjustments */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body.dark a {
+    color: #90CAF9;
+}

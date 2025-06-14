@@ -1,0 +1,136 @@
+.auth {
+    max-width: 35rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--page-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.auth form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 10rem;
+}
+
+input {
+    flex: 2;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--text-primary);
+    outline: none;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+.duplicateEmail {
+    color: #4a90e2;
+    color: var(--text-primary);
+}
+
+button {
+    padding: 0.75rem;
+    background-color: var(--button-blue);
+    color: var(--button-text);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-blue-hover);
+}
+
+button:disabled {
+    background-color: var(--button-disabled);
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: var(--button-disabled-hover);
+}
+
+
+@media (max-width: 850px) {
+
+    .auth {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .auth {
+        padding: 0.5rem;
+    }
+
+    .auth h2 {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .auth form {
+        gap: 0.5rem;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputContainer label {
+        width: 100%;
+    }
+
+    .inputContainer input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+}
