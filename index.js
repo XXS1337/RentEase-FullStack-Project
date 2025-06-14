@@ -15,7 +15,6 @@ const app = express();
 dotenv.config();
 
 // Define allowed origins for CORS
-const allowedOrigins = [process.env.ALLOWED_ORIGIN_1, process.env.ALLOWED_ORIGIN_2];
 const corsOptions = {
   origin: 'https://your-netlify-site.netlify.app', // Only allow specified domains
   credentials: true, // Allow credentials (cookies, auth headers)
