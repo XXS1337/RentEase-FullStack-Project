@@ -16,7 +16,7 @@ dotenv.config();
 
 // Define allowed origins for CORS
 const corsOptions = {
-  origin: 'https://your-netlify-site.netlify.app', // Only allow specified domains
+  origin: 'https://renteaseflullstack.netlify.app/', // Only allow specified domains
   credentials: true, // Allow credentials (cookies, auth headers)
   optionsSuccessStatus: 200, // Respond with 200 for preflight requests
 };
