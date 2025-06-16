@@ -15,8 +15,9 @@ const app = express();
 dotenv.config();
 
 // Define allowed origins for CORS
+const allowedOrigins = process.env.ALLOWED_ORIGIN_2;
 const corsOptions = {
-  origin: 'https://renteaseflullstack.netlify.app', // Only allow specified domains
+  origin: allowedOrigins, // Only allow specified domains
   credentials: true, // Allow credentials (cookies, auth headers)
   optionsSuccessStatus: 200, // Respond with 200 for preflight requests
 };
